@@ -33,6 +33,15 @@ document.getElementById("reset-btn").addEventListener("click", function () {
   document.getElementById("results").classList.add("hidden");
 });
 
-document.getElementById("dark-toggle").addEventListener("change", function () {
+const toggle = document.getElementById("dark-toggle");
+const toggleText = document.querySelector(".toggle-text");
+
+toggle.addEventListener("change", function () {
   document.body.classList.toggle("dark-mode");
+
+  if (toggle.checked) {
+    toggleText.textContent = "☀️ Tryb jasny";
+  } else {
+    toggleText.textContent = "🌙 Tryb ciemny";
+  }
 });
