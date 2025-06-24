@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.calculator {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.calculator h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #555;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0078d7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005ea6;
+}
+
+#results {
+  margin-top: 30px;
+  background-color: #f6fafd;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #dde6f0;
+}
+
+.hidden {
+  display: none;
+}
+
+#results h2 {
+  margin-top: 0;
+  color: #0078d7;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .calculator {
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode input,
+body.dark-mode label,
+body.dark-mode p {
+  color: #ffffff;
+}
+
+body.dark-mode input {
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+  color: #ffffff;
+}
+
+body.dark-mode button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+}
+
+body.dark-mode #results {
+  background-color: #3b3b3b;
+  border-color: #555;
+}
+
+body.dark-mode .toggle-mode {
+  color: #ffffff;
+}
+
+body.dark-mode .calculator h1 {
+  color: #ffffff;
+}
+.toggle-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1000;
+}

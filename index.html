@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator Kredytowy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <label class="toggle-mode">
+        <input type="checkbox" id="dark-toggle"/>🌙 Tryb ciemny
+    </label>
+    
+  <div class="calculator">
+    <h1>Kalkulator kredytowy</h1>
+    
+    <form id="loan-form">    
+        <label for="amount">Kwota kredytu (zł):</label>
+        <input type="number" id="amount" required />
+    
+        <label for="interest">Oprocentowanie (% rocznie):</label>
+        <input type="number" id="interest" step="0.01" required />
+    
+        <label for="years">Okres spłaty (lata):</label>
+        <input type="number" id="years" required />
+
+      <button type="submit">Oblicz ratę</button>
+      <button type="button" id="reset-btn">Wyczyść</button>
+    </form>
+
+    <div id="results" class="hidden">
+      <h2>Wyniki:</h2>
+      <p>Miesięczna rata: <strong id="monthly-payment">–</strong></p>
+      <p>Całkowita kwota do spłaty: <strong id="total-payment">–</strong></p>
+      <p>Suma odsetek: <strong id="total-interest">–</strong></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
